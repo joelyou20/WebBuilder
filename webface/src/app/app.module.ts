@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PagesComponent } from './pages/pages.component';
 import { SettingsComponent } from './settings/settings.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PagesComponent,
-    SettingsComponent
+    SettingsComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,9 @@ import { SettingsComponent } from './settings/settings.component';
       {path: 'pages', component: PagesComponent},
       {path: 'settings', component: SettingsComponent},
     ])
+  ],
+  exports: [
+    NavComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

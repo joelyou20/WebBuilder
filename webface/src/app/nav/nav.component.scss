@@ -1,0 +1,46 @@
+body {
+  width: 100%;
+  display: inline;
+}
+
+.sidenav {
+  width: 100%;
+  background-color: #111;
+  transition: 0.5s;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Add a color to the active/current link */
+.sidenav a.active {
+  color: white;
+  text-decoration: underline;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.logoutBtn {
+  align-self: center;
+  float: right;
+  position: relative;
+}
