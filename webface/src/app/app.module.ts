@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { PagesComponent } from './pages/pages.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NavComponent } from './nav/nav.component';
+import { SitePanelComponent } from './site-panel/site-panel.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavComponent } from './nav/nav.component';
     HomeComponent,
     PagesComponent,
     SettingsComponent,
-    NavComponent
+    NavComponent,
+    SitePanelComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,9 @@ import { NavComponent } from './nav/nav.component';
     ])
   ],
   exports: [
-    NavComponent
+    NavComponent,
+    PagesComponent,
+    SitePanelComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
