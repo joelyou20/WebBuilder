@@ -1,0 +1,10 @@
+body {
+    width: 100%;
+}
+
+.site-list {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: wrap;
+}
